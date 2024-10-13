@@ -1,0 +1,24 @@
+/* Make notes look more like a LaTeX document. */
+
+mjx-container {
+  line-height: 0px;
+  font-size: calc(1 * var(--editor-font-size));
+}
+
+.markdown-preview-view {
+  font-family: "CMU Serif Bold" !important;
+}
+
+.markdown-preview-view p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.markdown-source-view.mod-cm6 .cm-scroller {
+  font-family: "CMU Serif Bold" !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line {
+  text-align: justify;
+  text-justify: inter-word;
+}
