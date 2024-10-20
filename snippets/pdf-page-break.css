@@ -1,0 +1,19 @@
+/* Always place a page break before an `h1` heading when exporting to PDF. */
+
+@media print {
+  h1 {
+    page-break-before: always;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+  }
+
+  .internal-embed {
+    page-break-after: avoid;
+    page-break-before: avoid;
+  }
+}
