@@ -1,0 +1,15 @@
+/* This is a dumb fix for the HTML representation of equation boxes made by the
+   [LaTeX-like Theorem & Equation Referencer][1] plugin.
+   
+   [1]: https://github.com/RyotaUshio/obsidian-latex-theorem-equation-referencer/ */
+
+/* In callouts, math blocks preceded by a newline will be considered a paragraph
+   and thus will have a top and bottom margin of 1em. */
+
+.callout-content p + .math-block {
+  margin: -1.5em 0 0 !important;
+}
+
+.callout-content .math-block + p {
+  margin: -0.5em 0 1em !important;
+}
