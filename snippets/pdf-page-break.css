@@ -1,9 +1,10 @@
 /* Always place a page break before an `h1` heading when exporting to PDF. */
 
 @media print {
-  h1 {
+  h1 ~ h1 {
     page-break-before: always;
   }
+  h1 :not(h1 ~ h1),
   h2,
   h3,
   h4,
